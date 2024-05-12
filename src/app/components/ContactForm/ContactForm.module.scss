@@ -1,0 +1,11 @@
+.container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 4rem;
+
+	.image {
+		width: 30rem;
+		height: auto;
+	}
+}

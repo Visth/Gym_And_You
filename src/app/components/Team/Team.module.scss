@@ -1,0 +1,58 @@
+@import "../../styles/theme.scss";
+
+.container {
+	margin: 6rem 8rem;
+
+	h2 {
+		text-align: center;
+		font-size: 4rem;
+		margin-bottom: 2rem;
+	}
+
+	.cardContainer {
+		display: flex;
+		justify-content: center;
+
+		.card {
+			position: relative;
+			margin: 2rem 1rem;
+			height: 60vh;
+			width: 25%;
+			overflow: hidden;
+
+			&__image {
+				height: 100%;
+				width: 100%;
+				overflow: hidden;
+				object-fit: cover;
+				border-radius: 4px;
+			}
+
+			&__text {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				flex-direction: column;
+				position: absolute;
+				bottom: 0;
+				height: 4rem;
+				width: 100%;
+				color: $color-white;
+				background: rgba(0, 0, 0, 0.75);
+
+				.icon {
+					margin-top: 0.5rem;
+					margin-right: 0.5rem;
+					margin-left: 0.5rem;
+					font-size: 1.4rem;
+					cursor: pointer;
+					transition: color 0.3s;
+
+					&:hover {
+						color: $color-main;
+					}
+				}
+			}
+		}
+	}
+}

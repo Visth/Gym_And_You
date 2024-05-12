@@ -1,0 +1,35 @@
+@import "../../styles/theme.scss";
+
+.container {
+	margin: 8rem 2rem;
+	max-width: 100%;
+	text-align: center;
+
+	h2 {
+		font-size: 4rem;
+		margin-bottom: 2rem;
+	}
+
+	.shopProductContainer {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-wrap: wrap;
+	}
+
+	.btn {
+		margin-top: 4rem;
+		padding: 1rem 2rem;
+		background-color: $color-main;
+		font-weight: bold;
+		border: 1px solid rgb(0, 0, 0);
+		border-radius: 1rem;
+		cursor: pointer;
+		transition: 0.3s;
+
+		&:hover {
+			background-color: rgb(0, 0, 0);
+			color: $color-main;
+		}
+	}
+}

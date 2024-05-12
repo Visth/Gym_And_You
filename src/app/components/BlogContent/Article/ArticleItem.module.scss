@@ -1,0 +1,127 @@
+.container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 50vw;
+	padding: 1rem;
+	box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+		rgba(0, 0, 0, 0.3) 0px 7px 13px -3px,
+		rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+
+	.image {
+		width: 100%;
+		height: auto;
+	}
+
+	.title {
+		margin: 2rem 1rem 1rem 1rem;
+		font-size: 2rem;
+	}
+
+	.date {
+		display: flex;
+		justify-content: flex-end;
+		margin-right: 1rem;
+		margin-bottom: 2rem;
+		font-size: 1.4rem;
+	}
+
+	.text {
+		margin: 0 1rem;
+		font-size: 1.2rem;
+		word-spacing: 2px;
+	}
+
+	.quote {
+		margin: 1.6rem 1rem;
+		padding: 1rem;
+		font-size: 1.4rem;
+		background-color: rgba(179, 222, 8, 0.5);
+	}
+
+	.btnContainer {
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+		margin: 3rem 1rem;
+
+		a {
+			text-decoration: none;
+		}
+
+		button {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			gap: 0.5rem;
+			width: 12vw;
+			padding: 1rem 2rem;
+			font-size: 1.2rem;
+			font-weight: bold;
+			border: 1px solid rgb(80, 80, 80);
+			border-radius: 0.6rem;
+			color: rgb(0, 0, 0);
+			cursor: pointer;
+			transition: background 1.5s;
+		}
+
+		.btnLike {
+			background: rgb(175, 77, 235);
+			background: linear-gradient(
+				336deg,
+				rgba(175, 77, 235, 1) 0%,
+				rgba(228, 165, 225, 1) 24%,
+				rgba(129, 72, 228, 1) 100%
+			);
+
+			.iconLike {
+				font-size: 1.6rem;
+				color: rgb(237, 10, 101);
+			}
+
+			&:hover {
+				background: rgb(173, 21, 255);
+			}
+		}
+
+		.btnShare {
+			background: rgb(0, 137, 198);
+			background: linear-gradient(
+				336deg,
+				rgba(0, 137, 198, 1) 0%,
+				rgba(55, 240, 234, 1) 24%,
+				rgba(0, 150, 193, 1) 100%
+			);
+
+			.iconShare {
+				font-size: 1.6rem;
+				color: rgb(0, 192, 239);
+				color: rgb(0, 13, 150);
+			}
+
+			&:hover {
+				background: rgb(0, 160, 208);
+			}
+		}
+
+		.btnBack {
+			background: rgb(171, 171, 171);
+			background: linear-gradient(
+				336deg,
+				rgba(171, 171, 171, 1) 0%,
+				rgba(215, 215, 215, 1) 24%,
+				rgba(108, 108, 108, 1) 100%
+			);
+
+			.iconBack {
+				font-size: 1.6rem;
+				color: rgb(50, 50, 50);
+			}
+
+			&:hover {
+				background: rgb(180, 180, 180);
+			}
+		}
+	}
+}

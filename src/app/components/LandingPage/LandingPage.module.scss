@@ -1,0 +1,30 @@
+@import "../../styles/theme.scss";
+
+.heroContainer {
+	display: flex;
+	justify-content: center;
+	background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+		url("../../assets/equipment_03.jpg");
+	background-size: cover;
+	background-position: center;
+	height: 95vh;
+
+	.heroText {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		margin: 10rem 14rem;
+		align-items: center;
+		color: $color-white;
+
+		p {
+			font-size: 1.6rem;
+			margin: 3rem 5rem;
+			text-align: center;
+		}
+	}
+
+	h1 {
+		font-size: 5rem;
+	}
+}

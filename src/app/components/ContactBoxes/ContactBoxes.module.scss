@@ -1,0 +1,46 @@
+@import "../../styles/theme.scss";
+
+.container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 4rem 1rem;
+	gap: 6rem;
+	height: 50vh;
+
+	a {
+		text-decoration: none;
+		color: rgb(0, 0, 0);
+	}
+
+	.card {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		width: 16rem;
+		height: 26vh;
+		box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px,
+			rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+		border-bottom: 4px solid $color-main;
+		transition: background-color 0.3s;
+
+		&:hover {
+			background-color: $color-main;
+		}
+
+		.icon {
+			font-size: 3rem;
+			margin-bottom: 1.6rem;
+		}
+
+		h3 {
+			font-size: 1.4rem;
+			margin-bottom: 0.5rem;
+		}
+
+		&__text {
+			font-size: 1.2rem;
+		}
+	}
+}

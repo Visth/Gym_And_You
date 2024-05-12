@@ -1,0 +1,42 @@
+@import "../../styles/theme.scss";
+
+.container {
+	position: sticky;
+	top: 0;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background-color: rgb(0, 0, 0);
+	padding: 0.5rem 15%;
+	z-index: 10;
+
+	.brandName {
+		font-size: 2.2rem;
+		font-weight: bold;
+		color: $color-main;
+		text-decoration: none;
+	}
+
+	.listContainer {
+		display: flex;
+		gap: 1.6rem;
+		text-transform: uppercase;
+		list-style: none;
+
+		&__item {
+			text-decoration: none;
+			color: $color-white;
+			margin-right: 0.6rem;
+			transition: 0.3s;
+
+			&:hover {
+				color: $color-main;
+			}
+		}
+	}
+
+	.cartImg {
+		width: 1rem;
+		height: 1rem;
+	}
+}

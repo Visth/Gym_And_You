@@ -1,0 +1,19 @@
+@import "../../styles/theme.scss";
+
+.container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+		url("../../assets/equipment_01.jpg");
+	background-size: cover;
+	background-position: center;
+	height: 40vh;
+
+	h2 {
+		color: $color-main;
+		font-size: 3.2rem;
+		text-transform: uppercase;
+		font-style: oblique;
+	}
+}
