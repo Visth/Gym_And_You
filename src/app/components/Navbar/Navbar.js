@@ -1,8 +1,6 @@
 import styles from "./Navbar.module.scss";
 import { Rubik_Scribble } from "next/font/google";
-
-import Image from "next/image";
-import CART_IMG from "../../assets/cart.png";
+import { FaShoppingCart } from "react-icons/fa";
 
 const rubikScribble = Rubik_Scribble({
 	style: ["normal"],
@@ -50,11 +48,9 @@ export const Navbar = () => {
 					</a>
 				</li>
 				<li>
-					<Image
-						alt='cart image'
-						src={CART_IMG}
-						className={styles.cartImg}
-					/>
+					<a className={styles.listContainer__item} href='/cart'>
+						<FaShoppingCart className={styles.cart} />
+					</a>
 				</li>
 			</ul>
 		</div>

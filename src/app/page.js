@@ -4,7 +4,7 @@ import { Navbar } from "./components/Navbar/Navbar";
 import { LandingPage } from "./components/LandingPage/LandingPage";
 import { FirstInfo } from "./components/FirstInfo/FirstInfo";
 import { Interlude } from "./components/Interlude/Interlude";
-import { ShopContent } from "./components/ShopContent/ShopContent";
+import { ShopContentBestsellers } from "./components/ShopContent/ShopContentBestsellers";
 import { Counter } from "./components/Counter/Counter";
 import { Team } from "./components/Team/Team";
 import { Offers } from "./components/Offers/Offers";
@@ -23,7 +23,7 @@ export default function Home() {
 				heading='… We’ve got a Fitness Class for it!'
 				isSecond={false}
 			/>
-			<ShopContent />
+			<ShopContentBestsellers />
 			<Counter />
 			<Team />
 			<Interlude

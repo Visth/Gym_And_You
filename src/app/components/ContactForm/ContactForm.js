@@ -41,60 +41,94 @@ export const ContactForm = () => {
 
 	return (
 		<section className={styles.container}>
-			<Image
-				src={contactImg}
-				alt='Man exercising at the gym.'
-				className={styles.image}
-			/>
-			<div>
-				<h2>Get In Touch</h2>
-				<p>
-					Get in touch with us! We’re ready to assist and chat about
-					your questions and needs.
-				</p>
-				<Formik
-					onSubmit={handleSubmit}
-					initialValues={initialValues}
-					validationSchema={validationSchema}>
-					<Form>
-						<div>
-							<Field
-								type='text'
-								name='name'
-								placeholder='Your name'
-							/>
-							<ErrorMessage name='name' component='span' />
-						</div>
-						<div>
-							<Field
-								type='email'
-								name='email'
-								placeholder='Your email'
-							/>
-							<ErrorMessage name='email' component='span' />
-						</div>
-						<div>
-							<Field
-								type='text'
-								name='subject'
-								placeholder='Your Subject'
-							/>
-							<ErrorMessage name='subject' component='span' />
-						</div>
-						<div>
-							<Field
-								as='textarea'
-								name='textarea'
-								placeholder='Your Message'
-							/>
-							<ErrorMessage name='textarea' component='span' />
-						</div>
-						<button type='submit'>SEND MESSAGE</button>
-						{formSubmitted && (
-							<p>Your message was sent successfully!</p>
-						)}
-					</Form>
-				</Formik>
+			<div className={styles.formContainer}>
+				<Image
+					src={contactImg}
+					alt='Man exercising at the gym.'
+					className={styles.image}
+				/>
+				<div className={styles.form}>
+					<h2>Get In Touch</h2>
+					<p>
+						Get in touch with us! We’re ready to assist and chat
+						about your questions and needs.
+					</p>
+					<Formik
+						onSubmit={handleSubmit}
+						initialValues={initialValues}
+						validationSchema={validationSchema}>
+						<Form>
+							<div className={styles.fieldBox}>
+								<Field
+									className={styles.field}
+									type='text'
+									name='name'
+									placeholder='Your name'
+								/>
+								<ErrorMessage
+									name='name'
+									component='span'
+									className={styles.errorMessage}
+								/>
+							</div>
+							<div className={styles.fieldBox}>
+								<Field
+									className={styles.field}
+									type='email'
+									name='email'
+									placeholder='Your email'
+								/>
+								<ErrorMessage
+									name='email'
+									component='span'
+									className={styles.errorMessage}
+								/>
+							</div>
+							<div className={styles.fieldBox}>
+								<Field
+									className={styles.field}
+									type='text'
+									name='subject'
+									placeholder='Your Subject'
+								/>
+								<ErrorMessage
+									name='subject'
+									component='span'
+									className={styles.errorMessage}
+								/>
+							</div>
+							<div className={styles.fieldBox}>
+								<Field
+									className={
+										styles.field + " " + styles.textarea
+									}
+									as='textarea'
+									name='textarea'
+									placeholder='Your Message'
+								/>
+								<ErrorMessage
+									name='textarea'
+									component='span'
+									className={styles.errorMessage}
+								/>
+							</div>
+							<button type='submit' className={styles.btn}>SEND MESSAGE</button>
+							{formSubmitted && (
+								<p>Your message was sent successfully!</p>
+							)}
+						</Form>
+					</Formik>
+				</div>
+			</div>
+			<div className={styles.mapContainer}>
+				<iframe
+					src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3133.9199209892463!2d-122.6508586!3d38.2349655!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085b421d09c12d1%3A0xf95fa8b4cfac49e6!2s12%20Park%20Ave%2C%20Petaluma%2C%20CA%2094952%2C%20Stany%20Zjednoczone!5e0!3m2!1spl!2spl!4v1715601186750!5m2!1spl!2spl'
+					width='600'
+					height='450'
+					allowFullScreen=''
+					loading='lazy'
+					referrerPolicy='no-referrer-when-downgrade'
+					className={styles.map}></iframe>
 			</div>
 		</section>
 	);

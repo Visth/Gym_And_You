@@ -111,14 +111,14 @@ const shopData = [
 	{
 		id: 13,
 		img: creatine06,
-		name: "MusclePharm Creatine 400g",
+		name: "Pharm Creatine 400g",
 		price: "12.99",
 		category: "Creatine",
 	},
 	{
 		id: 14,
 		img: preworkout01,
-		name: "Psychotic Pre-Workout 250g",
+		name: "Labz Pre-Workout 250g",
 		price: "14.99",
 		category: "Pre-Workout",
 		isBestseller: true,
@@ -141,7 +141,7 @@ const shopData = [
 	{
 		id: 17,
 		img: preworkout04,
-		name: "PumpHD Pre-Workout 300g",
+		name: "Pump Pre-Workout 300g",
 		price: "18.99",
 		category: "Pre-Workout",
 	},

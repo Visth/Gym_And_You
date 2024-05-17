@@ -1,11 +1,81 @@
+@import "../../styles/theme.scss";
+
 .container {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	gap: 4rem;
+	margin: 0;
+
+	.formContainer {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		gap: 4rem;
+		width: 100%;
+	}
 
 	.image {
 		width: 30rem;
 		height: auto;
+	}
+
+	.form {
+		width: 40vw;
+		padding: 2rem 2rem 6rem 2rem;
+		box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+		h2 {
+			font-size: 2.8rem;
+			margin-bottom: 1rem;
+		}
+
+		p {
+			font-size: 1.4rem;
+			margin-bottom: 2rem;
+		}
+
+		.fieldBox {
+			margin-bottom: 1rem;
+		}
+
+		.field {
+			font-size: 1rem;
+			padding: 0.5rem;
+			width: 100%;
+		}
+
+		.textarea {
+			width: 100%;
+			min-height: 8rem;
+			max-height: 16rem;
+			resize: vertical;
+		}
+
+		.errorMessage {
+			margin-top: 0;
+			color: red;
+		}
+	}
+
+	.btn {
+		padding: 1rem 2rem;
+		border: 1px solid rgb(0, 0, 0);
+		border-radius: 0.5rem;
+		font-weight: bold;
+		background-color: $color-main;
+		cursor: pointer;
+		transition: border 0.3s, background-color 0.3s, color 0.3s;
+
+		&:hover {
+			border: 1px solid $color-main;
+			background-color: rgb(0, 0, 0);
+			color: $color-main;
+		}
+	}
+
+	.mapContainer {
+		margin-top: 4rem;
+
+		.map {
+			width: 100%;
+			border: none;
+		}
 	}
 }
