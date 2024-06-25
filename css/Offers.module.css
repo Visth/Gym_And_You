@@ -1,0 +1,62 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 6rem 0;
+}
+.container h2 {
+  font-size: 4rem;
+  margin-bottom: 4rem;
+}
+.container .cardsContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 4rem;
+}
+.container .card {
+  background: rgb(18, 18, 18);
+  background: linear-gradient(90deg, rgb(18, 18, 18) 0%, rgb(71, 71, 71) 50%, rgb(18, 18, 18) 100%);
+  box-shadow: rgba(206, 14, 253, 0.4) 5px 5px, rgba(210, 8, 197, 0.3) 10px 10px, rgba(221, 0, 255, 0.2) 15px 15px, rgba(255, 17, 239, 0.1) 20px 20px, rgba(193, 2, 120, 0.05) 25px 25px;
+  width: 20rem;
+  padding: 2rem 3rem;
+  color: rgb(240, 240, 240);
+}
+.container .card h3 {
+  font-size: 2.8rem;
+  color: rgb(218, 250, 10);
+}
+.container .card .price {
+  font-size: 2.8rem;
+  margin-right: 0.5rem;
+  color: rgb(218, 250, 10);
+}
+.container .card ul {
+  list-style: none;
+  margin: 1.6rem 0;
+}
+.container .card ul li {
+  font-size: 1.1rem;
+  margin: 1.2rem 0;
+}
+.container .card ul li .open {
+  color: rgb(218, 250, 10);
+}
+.container .card ul li .close {
+  color: rgb(218, 30, 30);
+}
+
+@media (max-width: 992px) {
+  .container {
+    margin: 4rem 0;
+  }
+  .container h2 {
+    text-align: center;
+    font-size: 2.4rem;
+    margin-bottom: 2.4rem;
+  }
+  .container .card {
+    width: 18rem;
+  }
+}/*# sourceMappingURL=Offers.module.css.map */

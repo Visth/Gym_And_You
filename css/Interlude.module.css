@@ -1,0 +1,45 @@
+.container {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../../assets/gym_02.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  width: 100%;
+  height: 60vh;
+}
+
+.secondContainer {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../../assets/gym_04.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  width: 100%;
+  height: 50vh;
+}
+
+.interludeText {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  color: rgb(240, 240, 240);
+}
+.interludeText p {
+  font-size: 1.8rem;
+}
+.interludeText h2 {
+  font-size: 5.2rem;
+  margin: 2.4rem 0;
+}
+
+@media (max-width: 992px) {
+  .interludeText {
+    padding: 1rem 2rem;
+  }
+  .interludeText p {
+    font-size: 1.4rem;
+  }
+  .interludeText h2 {
+    font-size: 2.4rem;
+  }
+}/*# sourceMappingURL=Interlude.module.css.map */

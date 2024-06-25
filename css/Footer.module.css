@@ -1,0 +1,107 @@
+.container {
+  padding: 2rem 8rem;
+  color: rgb(240, 240, 240);
+  background-color: rgb(30, 30, 30);
+}
+.container .footerContent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4rem;
+  margin-bottom: 1rem;
+}
+.container .footerContent__Box {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  min-height: 20vh;
+  max-width: 16vw;
+  font-size: 1.1rem;
+}
+.container .footerContent__Box:first-child {
+  margin-right: 4rem;
+}
+.container .footerContent__Box h3 {
+  font-size: 1.8rem;
+  color: rgb(218, 250, 10);
+}
+.container .footerContent__Box ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.container .footerContent__Box ul .link {
+  color: rgb(240, 240, 240);
+  text-decoration: none;
+  transition: color 0.3s;
+}
+.container .footerContent__Box ul .link:hover {
+  color: rgb(218, 250, 10);
+}
+.container .footerContent__Box .contactBox {
+  width: 25vw;
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+.container .footerContent__Box .contactBox__icon {
+  color: rgb(218, 250, 10);
+}
+.container .footerContent .brandName {
+  font-size: 2.8rem;
+  font-weight: bold;
+  color: rgb(218, 250, 10);
+}
+.container hr {
+  height: 1rem;
+  border: 0;
+  box-shadow: inset 0 12px 12px -12px rgba(255, 255, 255, 0.8);
+}
+.container .footerDate {
+  margin-top: 1rem;
+  text-align: center;
+}
+.container .footerDate .date {
+  font-size: 1.1rem;
+}
+
+@media (max-width: 992px) {
+  .container {
+    height: auto;
+    text-align: center;
+    padding: 0 0.5rem;
+  }
+  .container .footerContent {
+    flex-direction: column;
+    padding-top: 4rem;
+  }
+  .container .footerContent__Box {
+    min-width: 20rem;
+    height: auto;
+    text-align: center;
+    font-size: 1rem;
+  }
+  .container .footerContent__Box .description {
+    display: none;
+  }
+  .container .footerContent__Box:first-child {
+    display: none;
+  }
+  .container .footerContent__Box:last-child {
+    align-items: center;
+    margin-bottom: 2rem;
+  }
+  .container .footerContent .contactBox {
+    min-width: 14rem;
+  }
+  .container .footerContent .contactBox__icon {
+    font-size: 1.5rem;
+  }
+  .container .footerContent .brandName {
+    display: none;
+  }
+  .container .footerDate {
+    padding-bottom: 1rem;
+  }
+}/*# sourceMappingURL=Footer.module.css.map */

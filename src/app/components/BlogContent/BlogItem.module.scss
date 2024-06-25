@@ -52,20 +52,23 @@
 		font-size: 1.4rem;
 		word-spacing: 2px;
 		color: rgb(219, 95, 0);
+		color: rgb(72, 72, 72);
 	}
 
 	.text {
-		font-size: 1.2rem;
+		font-size: 1rem;
 		margin-left: 1rem;
 		word-spacing: 2px;
 	}
 
 	.link {
 		position: absolute;
-		bottom: 1.6rem;
+		bottom: 2.6rem;
 		margin-left: 1rem;
 		padding: 0.8rem 2.2rem;
 		background-color: rgb(219, 95, 0);
+		background-color: $color-main;
+		background-color: rgb(20, 20, 20);
 		border: none;
 		border-radius: 0.5rem;
 		color: $color-white;
@@ -75,7 +78,27 @@
 
 		&:hover {
 			background-color: rgb(100, 100, 100);
+			background-color: $color-main;
+			color: rgb(20, 20, 20);
+			border: 1px solid rgb(20, 20, 20);
 			transform: scale(1.1);
+		}
+
+		&:focus {
+			background-color: $color-main;
+			color: rgb(20, 20, 20);
+		}
+	}
+}
+
+@media (max-width: 992px) {
+	.container {
+		height: 48rem;
+
+		.info__inside {
+			p {
+				font-size: 1rem;
+			}
 		}
 	}
 }

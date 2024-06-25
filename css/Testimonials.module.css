@@ -1,0 +1,36 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 4rem 6rem;
+  overflow: hidden;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url(../../assets/equipment_02.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  height: 100vh;
+}
+.container h2 {
+  font-size: 4rem;
+  margin-bottom: 6rem;
+  color: rgb(240, 240, 240);
+}
+.container .testimonialsContainer {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 2rem;
+  gap: 2rem;
+}
+
+@media (max-width: 992px) {
+  .container {
+    padding: 4rem 2rem;
+    height: auto;
+  }
+  .container h2 {
+    text-align: center;
+    font-size: 2.4rem;
+    margin-bottom: 4rem;
+  }
+}/*# sourceMappingURL=Testimonials.module.css.map */

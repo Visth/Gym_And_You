@@ -12,8 +12,12 @@ export const ShopProduct = ({ id, img, name, price }) => {
 			<Image src={img} alt='Product' className={styles.productImage} />
 			<p className={styles.productName}>{name}</p>
 			<p className={styles.productPrice}>${price}</p>
-			<button onClick={() => addToCart(id)}>
-				Add To Cart {cartItemAmount > 0 && <span>({cartItemAmount})</span>}
+			<button
+				onClick={() => {
+					addToCart(id);
+				}}>
+				Add To Cart{" "}
+				{cartItemAmount > 0 && <span>({cartItemAmount})</span>}
 			</button>
 		</div>
 	);

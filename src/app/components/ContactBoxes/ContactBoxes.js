@@ -3,9 +3,21 @@ import { FaMapMarkedAlt } from "react-icons/fa";
 import { FaPhoneVolume } from "react-icons/fa6";
 import { IoIosMailUnread } from "react-icons/io";
 
+import { useRef } from "react";
+import { motion, useInView } from "framer-motion";
+import AnimationVariants from "../AnimationVariants/AnimationVariants";
+
 export const ContactBoxes = () => {
+	const ref = useRef();
+	const isInView = useInView(ref, { once: true });
+
 	return (
-		<section className={styles.container}>
+		<motion.section
+			className={styles.container}
+			variants={AnimationVariants.slideIn}
+			initial='initial'
+			animate={isInView ? "animate" : "initial"}
+			ref={ref}>
 			<a
 				href='https://www.google.pl/maps/place/12+Park+Ave,+Petaluma,+CA+94952'
 				target='_blank'
@@ -30,6 +42,6 @@ export const ContactBoxes = () => {
 					<p className={styles.card__text}>GymAndYou@gmail.com</p>
 				</div>
 			</a>
-		</section>
+		</motion.section>
 	);
 };

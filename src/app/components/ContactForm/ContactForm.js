@@ -1,5 +1,4 @@
 "use client";
-
 import styles from "./ContactForm.module.scss";
 import { useState } from "react";
 import { Formik, Form, ErrorMessage, Field } from "formik";
@@ -7,7 +6,13 @@ import * as Yup from "yup";
 import contactImg from "../../assets/contactImage.jpg";
 import Image from "next/image";
 
+import { useRef } from "react";
+import { motion, useInView } from "framer-motion";
+import AnimationVariants from "../AnimationVariants/AnimationVariants";
+
 export const ContactForm = () => {
+	const ref = useRef();
+	const isInView = useInView(ref, { once: true });
 	const [formSubmitted, setFormSubmitted] = useState(false);
 
 	const initialValues = {
@@ -40,7 +45,12 @@ export const ContactForm = () => {
 	};
 
 	return (
-		<section className={styles.container}>
+		<motion.section
+			className={styles.container}
+			variants={AnimationVariants.slideIn}
+			initial='initial'
+			animate={isInView ? "animate" : "initial"}
+			ref={ref}>
 			<div className={styles.formContainer}>
 				<Image
 					src={contactImg}
@@ -112,7 +122,9 @@ export const ContactForm = () => {
 									className={styles.errorMessage}
 								/>
 							</div>
-							<button type='submit' className={styles.btn}>SEND MESSAGE</button>
+							<button type='submit' className={styles.btn}>
+								SEND MESSAGE
+							</button>
 							{formSubmitted && (
 								<p>Your message was sent successfully!</p>
 							)}
@@ -130,6 +142,6 @@ export const ContactForm = () => {
 					referrerPolicy='no-referrer-when-downgrade'
 					className={styles.map}></iframe>
 			</div>
-		</section>
+		</motion.section>
 	);
 };

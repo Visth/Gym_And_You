@@ -34,8 +34,53 @@
 			}
 		}
 
+		.active {
+			color: $color-main;
+			font-weight: bold;
+		}
+
+		.quantity {
+			padding: 0 4px;
+			background-color: $color-main;
+			color: rgb(0, 0, 0);
+			border-radius: 50%;
+		}
+
 		.cart {
 			font-size: 1.1rem;
+		}
+	}
+
+	.hamburger {
+		display: none;
+	}
+}
+
+@media (max-width: 992px) {
+	.container {
+		padding: 0.5rem 5%;
+		justify-content: flex-end;
+		align-items: center;
+
+		.brandName {
+			display: none;
+		}
+
+		.listContainer {
+			flex-direction: column;
+			align-items: center;
+			gap: 1.5rem;
+			margin: 0.5rem 3rem;
+			width: 100%;
+		}
+
+		.hamburger {
+			display: block;
+			padding: 0.25rem 0.5rem;
+			margin-top: 0.5rem;
+			font-size: 1.8rem;
+			color: $color-white;
+			cursor: pointer;
 		}
 	}
 }

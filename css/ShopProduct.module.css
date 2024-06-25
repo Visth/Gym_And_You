@@ -1,0 +1,40 @@
+.container {
+  text-align: center;
+  margin: 2rem 3rem;
+  padding: 2rem 1rem;
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+.container .productImage {
+  width: 16rem;
+  height: 16rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+  transition: transform 0.2s;
+}
+.container .productImage:hover {
+  transform: scale(1.1);
+}
+.container .productName {
+  font-size: 1.4rem;
+  font-weight: bold;
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+}
+.container .productPrice {
+  margin-bottom: 1.8rem;
+  font-size: 1.6rem;
+}
+.container button {
+  color: rgb(240, 240, 240);
+  padding: 0.6rem 1rem;
+  background-color: rgb(0, 0, 0);
+  border: none;
+  font-weight: bold;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.container button:hover {
+  background-color: rgb(218, 250, 10);
+  color: rgb(0, 0, 0);
+}/*# sourceMappingURL=ShopProduct.module.css.map */

@@ -1,3 +1,5 @@
+"use client";
+import { AnimatedPage } from "../components/AnimatedPage/AnimatedPage";
 import { ContactBoxes } from "../components/ContactBoxes/ContactBoxes";
 import { ContactForm } from "../components/ContactForm/ContactForm";
 import { Footer } from "../components/Footer/Footer";
@@ -7,12 +9,14 @@ import "../styles/globals.css";
 
 export default function Contact() {
 	return (
-		<section>
+		<AnimatedPage>
+		<main>
 			<Navbar />
 			<Hero>contact</Hero>
 			<ContactBoxes />
 			<ContactForm />
 			<Footer />
-		</section>
+		</main>
+		</AnimatedPage>
 	);
 }

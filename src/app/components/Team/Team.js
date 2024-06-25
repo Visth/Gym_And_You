@@ -3,11 +3,28 @@ import Image from "next/image";
 import { teamData } from "./teamData";
 import { FaFacebookF, FaInstagram, FaTwitter } from "react-icons/fa";
 
+import { useRef } from "react";
+import { motion, useInView } from "framer-motion";
+import AnimationVariants from "../AnimationVariants/AnimationVariants";
+
 export const Team = () => {
+	const ref = useRef();
+	const isInView = useInView(ref, { once: true });
+
 	return (
-		<div className={styles.container}>
+		<motion.section
+			className={styles.container}
+			variants={AnimationVariants.slideIn}
+			initial='initial'
+			animate={isInView ? "animate" : "initial"}
+			ref={ref}>
 			<h2>Our Trainers Team</h2>
-			<div className={styles.cardContainer}>
+			<motion.div
+				className={styles.cardContainer}
+				variants={AnimationVariants.slideIn}
+				initial='initial'
+				animate={isInView ? "animate" : "initial"}
+				ref={ref}>
 				{teamData.map((trainer) => (
 					<div className={styles.card} key={trainer.id}>
 						<Image
@@ -25,7 +42,7 @@ export const Team = () => {
 						</div>
 					</div>
 				))}
-			</div>
-		</div>
+			</motion.div>
+		</motion.section>
 	);
 };

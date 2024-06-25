@@ -7,7 +7,8 @@ import { ShopContext } from "../../shopContext/ShopContext";
 
 export const CartItem = (props) => {
 	const { id, img, name, price } = props.data;
-	const { addToCart, removeFromCart, cartItems } = useContext(ShopContext);
+	const { addToCart, removeFromCart, cartItems, singleProductAmount } =
+		useContext(ShopContext);
 
 	return (
 		<div className={styles.container}>
@@ -31,7 +32,9 @@ export const CartItem = (props) => {
 					<FaPlusCircle className={styles.icon} />
 				</button>
 			</div>
-			<p className={styles.totalPrice}>Total Price</p>
+			<p className={styles.totalPrice}>
+				${singleProductAmount(id).toFixed(2)}
+			</p>
 		</div>
 	);
 };

@@ -26,7 +26,7 @@ export const Footer = () => {
 						}>
 						Gym&You
 					</p>
-					<p>
+					<p className={styles.description}>
 						Join our gym to strengthen your body, improve fitness,
 						and achieve your fitness goals. Get started today!
 					</p>

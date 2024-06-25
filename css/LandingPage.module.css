@@ -1,0 +1,37 @@
+.heroContainer {
+  display: flex;
+  justify-content: center;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../../assets/equipment_03.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 95vh;
+}
+.heroContainer .heroText {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 10rem 8rem;
+  align-items: center;
+  color: rgb(240, 240, 240);
+}
+.heroContainer .heroText h1 {
+  font-size: 5rem;
+}
+.heroContainer .heroText p {
+  font-size: 1.6rem;
+  margin: 3rem 5rem;
+  text-align: center;
+}
+
+@media (max-width: 992px) {
+  .heroContainer .heroText {
+    margin: 4rem 1rem;
+  }
+  .heroContainer .heroText h1 {
+    font-size: 2.8rem;
+    text-align: center;
+  }
+  .heroContainer .heroText p {
+    font-size: 1.2rem;
+  }
+}/*# sourceMappingURL=LandingPage.module.css.map */

@@ -125,3 +125,38 @@
 		}
 	}
 }
+
+@media (max-width: 992px) {
+	.container {
+		width: 100%;
+
+		.title {
+			font-size: 1.6rem;
+		}
+
+		.date {
+			font-size: 1.2rem;
+		}
+
+		.text {
+			font-size: 1.1rem;
+		}
+
+		.quote {
+			font-size: 1.3rem;
+		}
+
+		.btnContainer {
+			flex-direction: column;
+			gap: 1.5rem;
+
+			button {
+				width: 100%;
+			}
+
+			a {
+				width: 100%;
+			}
+		}
+	}
+}

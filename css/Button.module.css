@@ -1,0 +1,14 @@
+.btn {
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 0.8rem;
+  background-color: rgb(218, 250, 10);
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.btn:hover {
+  background: none;
+  box-shadow: 0 0 1rem 0 rgb(218, 250, 10);
+  color: rgb(218, 250, 10);
+}/*# sourceMappingURL=Button.module.css.map */

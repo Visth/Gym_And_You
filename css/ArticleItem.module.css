@@ -1,0 +1,121 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 50vw;
+  padding: 1rem;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+.container .image {
+  width: 100%;
+  height: auto;
+}
+.container .title {
+  margin: 2rem 1rem 1rem 1rem;
+  font-size: 2rem;
+}
+.container .date {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 1rem;
+  margin-bottom: 2rem;
+  font-size: 1.4rem;
+}
+.container .text {
+  margin: 0 1rem;
+  font-size: 1.2rem;
+  word-spacing: 2px;
+}
+.container .quote {
+  margin: 1.6rem 1rem;
+  padding: 1rem;
+  font-size: 1.4rem;
+  background-color: rgba(179, 222, 8, 0.5);
+}
+.container .btnContainer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 3rem 1rem;
+}
+.container .btnContainer a {
+  text-decoration: none;
+}
+.container .btnContainer button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  width: 12vw;
+  padding: 1rem 2rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+  border: 1px solid rgb(80, 80, 80);
+  border-radius: 0.6rem;
+  color: rgb(0, 0, 0);
+  cursor: pointer;
+  transition: background 1.5s;
+}
+.container .btnContainer .btnLike {
+  background: rgb(175, 77, 235);
+  background: linear-gradient(336deg, rgb(175, 77, 235) 0%, rgb(228, 165, 225) 24%, rgb(129, 72, 228) 100%);
+}
+.container .btnContainer .btnLike .iconLike {
+  font-size: 1.6rem;
+  color: rgb(237, 10, 101);
+}
+.container .btnContainer .btnLike:hover {
+  background: rgb(173, 21, 255);
+}
+.container .btnContainer .btnShare {
+  background: rgb(0, 137, 198);
+  background: linear-gradient(336deg, rgb(0, 137, 198) 0%, rgb(55, 240, 234) 24%, rgb(0, 150, 193) 100%);
+}
+.container .btnContainer .btnShare .iconShare {
+  font-size: 1.6rem;
+  color: rgb(0, 192, 239);
+  color: rgb(0, 13, 150);
+}
+.container .btnContainer .btnShare:hover {
+  background: rgb(0, 160, 208);
+}
+.container .btnContainer .btnBack {
+  background: rgb(171, 171, 171);
+  background: linear-gradient(336deg, rgb(171, 171, 171) 0%, rgb(215, 215, 215) 24%, rgb(108, 108, 108) 100%);
+}
+.container .btnContainer .btnBack .iconBack {
+  font-size: 1.6rem;
+  color: rgb(50, 50, 50);
+}
+.container .btnContainer .btnBack:hover {
+  background: rgb(180, 180, 180);
+}
+
+@media (max-width: 992px) {
+  .container {
+    width: 100%;
+  }
+  .container .title {
+    font-size: 1.6rem;
+  }
+  .container .date {
+    font-size: 1.2rem;
+  }
+  .container .text {
+    font-size: 1.1rem;
+  }
+  .container .quote {
+    font-size: 1.3rem;
+  }
+  .container .btnContainer {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  .container .btnContainer button {
+    width: 100%;
+  }
+  .container .btnContainer a {
+    width: 100%;
+  }
+}/*# sourceMappingURL=ArticleItem.module.css.map */
