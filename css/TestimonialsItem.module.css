@@ -1,0 +1,46 @@
+.testimonialsItem {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2rem;
+  width: 25vw;
+  height: 30vh;
+  padding: 2rem 1rem;
+  background-color: rgb(240, 240, 240);
+  border: 1px solid black;
+  border-radius: 0.5rem;
+}
+.testimonialsItem__profile {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.testimonialsItem__profile .testimonialsItem__name {
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+.testimonialsItem__profile .testimonialsItem__client {
+  font-size: 1.2rem;
+  color: rgb(215, 106, 4);
+}
+.testimonialsItem__image {
+  width: 5rem;
+  height: 5rem;
+  border: 2px solid rgb(253, 51, 115);
+  -o-object-fit: cover;
+     object-fit: cover;
+  padding: 0.2rem;
+  border-radius: 50%;
+}
+.testimonialsItem .testimonialsItem__review {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 1.1rem;
+  font-style: italic;
+}
+
+@media (max-width: 992px) {
+  .testimonialsItem {
+    width: 100%;
+    height: auto;
+  }
+}/*# sourceMappingURL=TestimonialsItem.module.css.map */

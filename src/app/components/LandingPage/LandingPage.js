@@ -1,18 +1,32 @@
+"use client";
 import styles from "./LandingPage.module.scss";
 import { Button } from "../Button/Button";
+import Link from "next/link";
+
+import { useRef } from "react";
+import { motion, useInView } from "framer-motion";
+import AnimationVariants from "../AnimationVariants/AnimationVariants";
 
 export const LandingPage = () => {
+	const ref = useRef();
+	const isInView = useInView(ref, { once: true });
+
 	return (
 		<div className={styles.heroContainer}>
-			<div className={styles.heroText}>
-				<h1>NEVER GIVE UP</h1>
+			<motion.div
+				className={styles.heroText}
+				variants={AnimationVariants.fadeIn2}
+				initial='initial'
+				animate={isInView ? "animate" : "initial"}
+				ref={ref}>
+				<h1>HIT OUR GYM</h1>
 				<p>
-					Every bodybuilder requires a lot of dedication and effort to
-					shape his/her body into something to be proud of. We can
-					give you everything you need for!
+				“Start where you are. Use what you have. Do what you can.” — Arthur Ashe
 				</p>
-				<Button>join us</Button>
-			</div>
+				<Link href='/contact'>
+					<Button>join us</Button>
+				</Link>
+			</motion.div>
 		</div>
 	);
 };

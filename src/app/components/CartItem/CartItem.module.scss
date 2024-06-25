@@ -4,10 +4,12 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	width: 90%;
+	width: 80%;
 	margin: 0.5rem 0;
 	padding: 0.5rem 0;
-	border: 1px solid rgb(0, 0, 0);
+	box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+		rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+	border-radius: 0.5rem;
 
 	.image {
 		width: 6rem;
@@ -21,13 +23,14 @@
 
 	.quantity {
 		margin-right: 0;
+		font-size: 1.4rem;
 	}
 
 	.addAndRemove {
 		display: flex;
-		align-items: center;
 		justify-content: center;
-		margin-right: 20%;
+		align-items: center;
+		margin-right: 10%;
 		gap: 0.5rem;
 	}
 
@@ -35,6 +38,7 @@
 		background: none;
 		border: none;
 		border-radius: 50%;
+		cursor: pointer;
 	}
 
 	.icon {
@@ -44,6 +48,41 @@
 
 		&:hover {
 			color: rgb(255, 34, 34);
+		}
+	}
+
+	.totalPrice {
+		font-size: 1.4rem;
+		font-weight: bold;
+	}
+}
+
+@media (max-width: 992px) {
+	.container {
+		width: 100%;
+
+		.image {
+			width: 3.5rem;
+		}
+
+		p {
+			margin-right: 1rem;
+		}
+
+		.quantity {
+			font-size: 1rem;
+		}
+
+		.addAndRemove {
+			margin-right: 5%;
+		}
+
+		.icon {
+			font-size: 1.4rem;
+		}
+
+		.totalPrice {
+			font-size: 1.1rem;
 		}
 	}
 }

@@ -1,0 +1,69 @@
+.container {
+  margin: 6rem 8rem;
+}
+.container h2 {
+  text-align: center;
+  font-size: 4rem;
+  margin-bottom: 2rem;
+}
+.container .cardContainer {
+  display: flex;
+  justify-content: center;
+}
+.container .cardContainer .card {
+  position: relative;
+  margin: 2rem 1rem;
+  height: 60vh;
+  width: 25%;
+  overflow: hidden;
+}
+.container .cardContainer .card__image {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 4px;
+}
+.container .cardContainer .card__text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: absolute;
+  bottom: 0;
+  height: 4rem;
+  width: 100%;
+  color: rgb(240, 240, 240);
+  background: rgba(0, 0, 0, 0.75);
+}
+.container .cardContainer .card__text .icon {
+  margin-top: 0.5rem;
+  margin-right: 0.5rem;
+  margin-left: 0.5rem;
+  font-size: 1.4rem;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+.container .cardContainer .card__text .icon:hover {
+  color: rgb(218, 250, 10);
+}
+
+@media (max-width: 992px) {
+  .container {
+    margin: 6rem 1rem;
+  }
+  .container h2 {
+    font-size: 2.4rem;
+    margin-bottom: 1rem;
+  }
+  .container .cardContainer {
+    flex-direction: column;
+    align-items: center;
+  }
+  .container .cardContainer .card {
+    width: 70vw;
+    height: 40vh;
+    margin: 2rem 0;
+  }
+}/*# sourceMappingURL=Team.module.css.map */

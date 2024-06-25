@@ -1,3 +1,4 @@
+"use client";
 import "../app/styles/globals.css";
 import "../app/styles/theme.scss";
 import { Navbar } from "./components/Navbar/Navbar";
@@ -11,30 +12,33 @@ import { Offers } from "./components/Offers/Offers";
 import { Testimonials } from "./components/Testimonials/Testimonials";
 import { CallBack } from "./components/CallBack/CallBack";
 import { Footer } from "./components/Footer/Footer";
+import { AnimatedPage } from "./components/AnimatedPage/AnimatedPage";
 
 export default function Home() {
 	return (
-		<main>
-			<Navbar />
-			<LandingPage />
-			<FirstInfo />
-			<Interlude
-				paragraph='WHATEVER YOUR MOOD IS…'
-				heading='… We’ve got a Fitness Class for it!'
-				isSecond={false}
-			/>
-			<ShopContentBestsellers />
-			<Counter />
-			<Team />
-			<Interlude
-				paragraph='Welcome To Gym&You…'
-				heading='… We help to get best fitness goal'
-				isSecond={true}
-			/>
-			<Offers />
-			<Testimonials />
-			<CallBack />
-			<Footer />
-		</main>
+		<AnimatedPage>
+			<main>
+				<Navbar />
+				<LandingPage />
+				<FirstInfo />
+				<Interlude
+					paragraph='WHATEVER YOUR MOOD IS…'
+					heading='… We’ve got ways to motivate You'
+					isSecond={false}
+				/>
+				<ShopContentBestsellers />
+				<Counter />
+				<Team />
+				<Interlude
+					paragraph='Welcome To Gym&You…'
+					heading='Welcome to the Gym Family'
+					isSecond={true}
+				/>
+				<Offers />
+				<Testimonials />
+				<CallBack />
+				<Footer />
+			</main>
+		</AnimatedPage>
 	);
 }

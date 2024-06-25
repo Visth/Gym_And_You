@@ -1,0 +1,65 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4rem;
+  margin: 4rem 6rem;
+}
+.container .image {
+  width: 30rem;
+  height: 50rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.container .accordion {
+  width: 40vw;
+}
+.container .accordion h2 {
+  text-align: center;
+  font-size: 3.2rem;
+  margin-bottom: 4rem;
+}
+.container .accordion__item {
+  background-color: rgb(200, 200, 200);
+  margin: 0.5rem;
+  padding: 1rem;
+  cursor: pointer;
+  transition: color 0.5s;
+}
+.container .accordion__item:hover {
+  color: rgb(218, 250, 10);
+}
+.container .accordion__box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.container .accordion__question {
+  word-spacing: 2px;
+}
+.container .accordion__answer {
+  margin-top: 1rem;
+  font-size: 1.2rem;
+  word-spacing: 2px;
+  color: rgb(0, 0, 0);
+}
+
+@media (max-width: 992px) {
+  .container {
+    flex-direction: column;
+    margin: 2rem 1rem;
+  }
+  .container .image {
+    width: 90%;
+    height: auto;
+  }
+  .container .accordion {
+    width: 100%;
+  }
+  .container .accordion h2 {
+    font-size: 2.8rem;
+  }
+  .container .accordion__item {
+    font-size: 1rem 0.5rem;
+  }
+}/*# sourceMappingURL=Accordion.module.css.map */

@@ -79,3 +79,27 @@
 		}
 	}
 }
+
+@media (max-width: 992px) {
+	.container {
+		.formContainer {
+			flex-direction: column;
+
+			.image {
+				width: 100%;
+			}
+
+			.form {
+				width: 90%;
+
+				h2 {
+					font-size: 2rem;
+				}
+
+				p {
+					font-size: 1.2rem;
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,15 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../../assets/equipment_01.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 40vh;
+}
+.container h2 {
+  color: rgb(218, 250, 10);
+  font-size: 3.2rem;
+  text-transform: uppercase;
+  font-style: oblique;
+}/*# sourceMappingURL=Hero.module.css.map */

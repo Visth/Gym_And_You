@@ -2,10 +2,23 @@ import styles from "./Offers.module.scss";
 import { AiOutlineCheck, AiOutlineClose } from "react-icons/ai";
 import { offersData } from "./offersData";
 import { Button } from "../Button/Button";
+import Link from "next/link";
+
+import { useRef } from "react";
+import { motion, useInView } from "framer-motion";
+import AnimationVariants from "../AnimationVariants/AnimationVariants";
 
 export const Offers = () => {
+	const ref = useRef();
+	const isInView = useInView(ref, { once: true });
+
 	return (
-		<div className={styles.container}>
+		<motion.div
+			className={styles.container}
+			variants={AnimationVariants.slideIn}
+			initial='initial'
+			animate={isInView ? "animate" : "initial"}
+			ref={ref}>
 			<h2>Our Pricing Plans For You</h2>
 			<div className={styles.cardsContainer}>
 				{offersData.map((offer) => (
@@ -90,10 +103,12 @@ export const Offers = () => {
 								</li>
 							</ul>
 						</div>
-						<Button>join now</Button>
+						<Link href='/contact'>
+							<Button>join now</Button>
+						</Link>
 					</div>
 				))}
 			</div>
-		</div>
+		</motion.div>
 	);
 };

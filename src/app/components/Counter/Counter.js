@@ -8,6 +8,7 @@ export const Counter = () => {
 		triggerOnce: true,
 		threshold: 0.5,
 	});
+	
 
 	return (
 		<div ref={ref} className={styles.container}>

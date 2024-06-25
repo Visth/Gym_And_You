@@ -1,36 +1,55 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Gym&You
 
-## Getting Started
+## Screenshots
 
-First, run the development server:
+<p align="center">
+    <img src="./readmeImages/readme_image_01.png" width="80%" height="400px"></img>
+    <br/>
+    <img src="./readmeImages/readme_image_02.png" width="80%" height="400px"></img>
+    <br/>
+    <img src="./readmeImages/readme_image_03.png" width="80%" height="400px"></img>
+    <br/>
+    <img src="./readmeImages/readme_image_04.png" width="80%" height="400px"></img>
+</p>
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+<hr/>
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Description
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+-   **Mobile, tablet and desktop view**
+-   Website of a (hypothetical) Gym called "Gym&You"!
+-   Website contains few subpages: About, Shop, FAQ, Blog, Contact and Cart.
+-   Blog subpage contains Articles that user can click and go to the specific Article subpage.
+-   Shop subpage contains Products List, with the option of adding to Cart selected Product.
+-   Contact subpage contains a Form allowing the user to write message directly to the company, as well as contains information about adress, including map.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+#### Technology used:
 
-## Learn More
+-   React
+-   Next.js
+-   SCSS
+-   Framer Motion - Animations
+-   E2E Tests
+-   Properly functioning Back-End
 
-To learn more about Next.js, take a look at the following resources:
+<hr/>
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## What I Learned
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+-   Using most important **SEO tags** in modern websites.
+-   Mastering routing in Next.js
+-   How to control state in contexts in bigger project using best practices. 
+-   Using SCSS with react modules styles.
+-   Creating advanced animations with library Framer Motion
+-   Destructuring project to the smallest components.
+-   Creating both E2E and Unit Tests.
 
-## Deploy on Vercel
+<hr/>
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Author info
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+-   **Name:** Filip Bereszyński
+-   **Age:** 22 years old
+-   **Contact:**
+    -   bereszynski.filip@gmail.com
+    -   (+48) 510 240 074

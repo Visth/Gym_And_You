@@ -8,8 +8,6 @@
 	margin: 4rem 6rem;
 
 	.image {
-		// width: 30vw;
-		// height: 90vh;
 		width: 30rem;
 		height: 50rem;
 		object-fit: cover;
@@ -51,6 +49,30 @@
 			font-size: 1.2rem;
 			word-spacing: 2px;
 			color: rgb(0, 0, 0);
+		}
+	}
+}
+
+@media (max-width: 992px) {
+	.container {
+		flex-direction: column;
+		margin: 2rem 1rem;
+
+		.image {
+			width: 90%;
+			height: auto;
+		}
+
+		.accordion {
+			width: 100%;
+
+			h2 {
+				font-size: 2.8rem;
+			}
+
+			&__item {
+				font-size: 1rem 0.5rem;
+			}
 		}
 	}
 }

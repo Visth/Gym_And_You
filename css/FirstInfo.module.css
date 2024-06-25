@@ -1,0 +1,54 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4rem;
+  padding: 0 8rem;
+  margin: 4rem 1rem;
+  height: auto;
+}
+.container .firstInfoImage {
+  width: 36rem;
+  height: 40rem;
+  border-radius: 0.5rem;
+  box-shadow: blue 0px 0px 0px 2px inset, rgb(255, 255, 255) 10px -10px 0px -3px, rgb(31, 193, 27) 10px -10px, rgb(255, 255, 255) 20px -20px 0px -3px, rgb(255, 217, 19) 20px -20px, rgb(255, 255, 255) 30px -30px 0px -3px, rgb(184, 12, 172) 30px -30px, rgb(255, 255, 255) 40px -40px 0px -3px, rgb(255, 85, 85) 40px -40px;
+}
+.container .firstInfoText {
+  width: 60%;
+  text-align: left;
+}
+.container .firstInfoText h2 {
+  font-size: 3.2rem;
+  margin-bottom: 4rem;
+}
+.container .firstInfoText h2 span {
+  color: rgb(218, 250, 10);
+}
+.container .firstInfoText p {
+  font-size: 1.4rem;
+  word-spacing: 2px;
+}
+
+@media (max-width: 992px) {
+  .container {
+    flex-direction: column;
+    height: auto;
+    margin: 4rem 1rem 2rem 1rem;
+    padding: 0 1rem;
+  }
+  .container .firstInfoImage {
+    width: 16rem;
+    height: auto;
+  }
+  .container .firstInfoText {
+    width: 100%;
+    text-align: center;
+  }
+  .container .firstInfoText h2 {
+    font-size: 2.2rem;
+    margin-bottom: 1rem;
+  }
+  .container .firstInfoText p {
+    font-size: 1.2rem;
+  }
+}/*# sourceMappingURL=FirstInfo.module.css.map */

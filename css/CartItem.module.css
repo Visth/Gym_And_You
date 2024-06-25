@@ -1,0 +1,71 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  margin: 0.5rem 0;
+  padding: 0.5rem 0;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+  border-radius: 0.5rem;
+}
+.container .image {
+  width: 6rem;
+  height: auto;
+}
+.container p {
+  width: 20%;
+  margin-right: 2rem;
+}
+.container .quantity {
+  margin-right: 0;
+  font-size: 1.4rem;
+}
+.container .addAndRemove {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10%;
+  gap: 0.5rem;
+}
+.container .btn {
+  background: none;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.container .icon {
+  font-size: 1.6rem;
+  padding: 4px;
+  color: rgb(0, 0, 0);
+}
+.container .icon:hover {
+  color: rgb(255, 34, 34);
+}
+.container .totalPrice {
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+
+@media (max-width: 992px) {
+  .container {
+    width: 100%;
+  }
+  .container .image {
+    width: 3.5rem;
+  }
+  .container p {
+    margin-right: 1rem;
+  }
+  .container .quantity {
+    font-size: 1rem;
+  }
+  .container .addAndRemove {
+    margin-right: 5%;
+  }
+  .container .icon {
+    font-size: 1.4rem;
+  }
+  .container .totalPrice {
+    font-size: 1.1rem;
+  }
+}/*# sourceMappingURL=CartItem.module.css.map */

@@ -1,9 +1,22 @@
-import Image from "next/image";
 import styles from "./TestimonialsItem.module.scss";
+import Image from "next/image";
+
+import { useRef } from "react";
+import { motion, useInView } from "framer-motion";
+import AnimationVariants from "../AnimationVariants/AnimationVariants";
 
 export const TestimonialsItem = ({ testimonial }) => {
+	const ref = useRef();
+	const isInView = useInView(ref, { once: true });
+	const isMobile = window.matchMedia("(max-width: 992px)").matches
+
 	return (
-		<div className={styles.testimonialsItem}>
+		<motion.div
+			className={styles.testimonialsItem}
+			variants={isMobile === true ? "" : AnimationVariants.testimonialAnimation}
+			initial='initial'
+			animate={isInView ? "animate" : "initial"}
+			ref={ref}>
 			<div className={styles.testimonialsItem__profile}>
 				<Image
 					src={testimonial.img}
@@ -22,6 +35,6 @@ export const TestimonialsItem = ({ testimonial }) => {
 			<p className={styles.testimonialsItem__review}>
 				{testimonial.review}
 			</p>
-		</div>
+		</motion.div>
 	);
 };

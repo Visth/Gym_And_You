@@ -1,0 +1,1 @@
+{"version":3,"sources":["../src/app/components/BlogContent/BlogContent.module.scss","BlogContent.module.css"],"names":[],"mappings":"AAAA;EACC,iBAAA;ACCD;ADCC;EACC,mBAAA;EACA,kBAAA;EACA,eAAA;ACCF;ADEC;EACC,aAAA;EACA,uBAAA;EACA,mBAAA;EACA,eAAA;ACAF;;ADIA;EACC;IACC,iBAAA;ECDA;EDGA;IACC,iBAAA;ECDD;AACF","file":"BlogContent.module.css"}

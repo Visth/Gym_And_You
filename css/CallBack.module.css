@@ -1,0 +1,55 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 4rem 6rem;
+  color: rgb(240, 240, 240);
+  background: rgb(0, 0, 0);
+  background: radial-gradient(circle, rgb(0, 0, 0) 0%, rgb(240, 34, 139) 25%, rgb(0, 0, 0) 100%);
+}
+.container h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+.container .phoneIcon {
+  width: 3rem;
+  height: 3rem;
+  margin-bottom: 1rem;
+}
+.container .freeCallRequest_first {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+.container .freeCallRequest_second {
+  font-size: 1.2rem;
+  margin-bottom: 4rem;
+}
+.container .btn {
+  padding: 1rem 3rem;
+  border: none;
+  border-radius: 0.5rem;
+  background-color: rgb(218, 250, 10);
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.container .btn:hover {
+  background: none;
+  box-shadow: 0 0 1rem 0 rgb(218, 250, 10);
+  color: rgb(218, 250, 10);
+}
+
+@media (max-width: 992px) {
+  .container {
+    text-align: center;
+    padding: 4rem 3rem;
+  }
+  .container h2 {
+    font-size: 1.6rem;
+  }
+  .container .freeCallRequest_second {
+    font-size: 1rem;
+    margin-bottom: 2rem;
+  }
+}/*# sourceMappingURL=CallBack.module.css.map */

@@ -3,9 +3,21 @@ import Image from "next/image";
 import { AiOutlineCheck } from "react-icons/ai";
 import aboutUsImage from "../../assets/equipment_04.jpg";
 
+import { useRef } from "react";
+import { motion, useInView } from "framer-motion";
+import AnimationVariants from "../AnimationVariants/AnimationVariants";
+
 export const AboutUs = () => {
+	const ref = useRef();
+	const isInView = useInView(ref, { once: true });
+
 	return (
-		<div className={styles.container}>
+		<motion.div
+			className={styles.container}
+			variants={AnimationVariants.slideIn}
+			initial='initial'
+			animate={isInView ? "animate" : "initial"}
+			ref={ref}>
 			<Image
 				src={aboutUsImage}
 				alt='fitness image'
@@ -44,7 +56,7 @@ export const AboutUs = () => {
 					</li>
 				</ul>
 			</div>
-		</div>
+		</motion.div>
 	);
 };
 

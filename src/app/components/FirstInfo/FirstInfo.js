@@ -2,9 +2,21 @@ import styles from "./FirstInfo.module.scss";
 import Image from "next/image";
 import firstInfoImage from "../../assets/gym_05.jpg";
 
+import { useRef } from "react";
+import { motion, useInView } from "framer-motion";
+import AnimationVariants from "../AnimationVariants/AnimationVariants";
+
 export const FirstInfo = () => {
+	const ref = useRef();
+	const isInView = useInView(ref, { once: true });
+
 	return (
-		<div className={styles.container}>
+		<motion.div
+			className={styles.container}
+			variants={AnimationVariants.slideIn}
+			initial='initial'
+			animate={isInView ? "animate" : "initial"}
+			ref={ref}>
 			<Image
 				src={firstInfoImage}
 				alt='fitness image'
@@ -12,8 +24,7 @@ export const FirstInfo = () => {
 			/>
 			<div className={styles.firstInfoText}>
 				<h2>
-					Fitness is the Answer...{" "}
-					<span>WHENEVER THE QUESTION IS YOUR PHYSICAL SHAPE!</span>
+					Embrace Your full potential... <span>WITH OUR HELP!</span>
 				</h2>
 				<p>
 					With a notion that fitness activities are not just mere 3
@@ -24,6 +35,6 @@ export const FirstInfo = () => {
 					we found the answer. It was - a skilled team of trainers!
 				</p>
 			</div>
-		</div>
+		</motion.div>
 	);
 };

@@ -13,9 +13,13 @@
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
-		margin: 10rem 14rem;
+		margin: 10rem 8rem;
 		align-items: center;
 		color: $color-white;
+
+		h1 {
+			font-size: 5rem;
+		}
 
 		p {
 			font-size: 1.6rem;
@@ -23,8 +27,21 @@
 			text-align: center;
 		}
 	}
+}
 
-	h1 {
-		font-size: 5rem;
+@media (max-width: 992px) {
+	.heroContainer {
+		.heroText {
+			margin: 4rem 1rem;
+
+			h1 {
+				font-size: 2.8rem;
+				text-align: center;
+			}
+
+			p {
+				font-size: 1.2rem;
+			}
+		}
 	}
 }

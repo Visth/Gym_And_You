@@ -1,0 +1,45 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 4rem 1rem;
+  gap: 6rem;
+  height: 50vh;
+}
+.container a {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+}
+.container .card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 16rem;
+  height: 26vh;
+  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+  border-bottom: 4px solid rgb(218, 250, 10);
+  transition: background-color 0.3s;
+}
+.container .card:hover {
+  background-color: rgb(218, 250, 10);
+}
+.container .card .icon {
+  font-size: 3rem;
+  margin-bottom: 1.6rem;
+}
+.container .card h3 {
+  font-size: 1.4rem;
+  margin-bottom: 0.5rem;
+}
+.container .card__text {
+  font-size: 1.2rem;
+}
+
+@media (max-width: 992px) {
+  .container {
+    flex-direction: column;
+    gap: 3rem;
+    height: auto;
+  }
+}/*# sourceMappingURL=ContactBoxes.module.css.map */
