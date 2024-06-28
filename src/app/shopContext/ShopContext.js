@@ -86,6 +86,7 @@ export const ShopContextProvider = (props) => {
 		getTotalCartAmount,
 		singleProductAmount,
 		totalCartItems,
+		clearCart,
 	};
 
 	return (
