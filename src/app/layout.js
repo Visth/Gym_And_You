@@ -9,9 +9,7 @@ export default function RootLayout({ children }) {
 	return (
 		<html lang='en'>
 			<body>
-				<ShopContextProvider>
-					{children}
-				</ShopContextProvider>
+				<ShopContextProvider>{children}</ShopContextProvider>
 			</body>
 		</html>
 	);

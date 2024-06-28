@@ -15,6 +15,12 @@ const getDefaultCart = () => {
 const getStoredCart = () => {
 	const storedCart = localStorage.getItem("cart");
 	return storedCart ? JSON.parse(storedCart) : getDefaultCart();
+
+	// if (typeof window !== "undefined") {
+	// 	const storedCart = localStorage.getItem("cart");
+	// 	return storedCart ? JSON.parse(storedCart) : getDefaultCart();
+	// }
+	// return getDefaultCart();
 };
 
 export const ShopContextProvider = (props) => {
@@ -33,6 +39,12 @@ export const ShopContextProvider = (props) => {
 
 		return totalAmount;
 	};
+
+	// useEffect(() => {
+	// 	if (typeof window !== "undefined") {
+	// 		localStorage.setItem("cart", JSON.stringify(cartItems));
+	// 	}
+	// }, [cartItems]);
 
 	useEffect(() => {
 		localStorage.setItem("cart", JSON.stringify(cartItems));
@@ -74,7 +86,7 @@ export const ShopContextProvider = (props) => {
 		getTotalCartAmount,
 		singleProductAmount,
 		totalCartItems,
-		clearCart
+		clearCart,
 	};
 
 	return (

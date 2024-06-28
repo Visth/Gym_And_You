@@ -5,19 +5,15 @@ import { Footer } from "../components/Footer/Footer";
 import { Hero } from "../components/Hero/Hero";
 import { Navbar } from "../components/Navbar/Navbar";
 import { ShopContent } from "../components/ShopContent/ShopContent";
-// import { ShopContextProvider } from "../shopContext/ShopContext";
-import { ShopContextProvider } from "../shopContext/shopContext";
 
 export default function Shop() {
 	return (
 		<AnimatedPage>
 			<main>
-				<ShopContextProvider>
-					<Navbar />
-					<Hero>shop</Hero>
-					<ShopContent />
-					<Footer />
-				</ShopContextProvider>
+				<Navbar />
+				<Hero>shop</Hero>
+				<ShopContent />
+				<Footer />
 			</main>
 		</AnimatedPage>
 	);

@@ -8,7 +8,7 @@ import AnimationVariants from "../AnimationVariants/AnimationVariants";
 export const TestimonialsItem = ({ testimonial }) => {
 	const ref = useRef();
 	const isInView = useInView(ref, { once: true });
-	const isMobile = window.matchMedia("(max-width: 992px)").matches
+	const isMobile = typeof window !== "undefined" && window.matchMedia("(max-width: 992px)").matches
 
 	return (
 		<motion.div
