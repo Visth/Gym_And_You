@@ -1,13 +1,8 @@
 import styles from "./Footer.module.scss";
 import { AiFillPhone, AiFillMail } from "react-icons/ai";
-import {
-	FaFacebookF,
-	FaTwitter,
-	FaInstagram,
-	FaYoutube,
-	FaLocationArrow,
-} from "react-icons/fa";
+import { FaLocationArrow } from "react-icons/fa";
 import { Rubik_Scribble } from "next/font/google";
+// import { Bahiana } from "next/font/google";
 
 const rubikScribble = Rubik_Scribble({
 	style: ["normal"],

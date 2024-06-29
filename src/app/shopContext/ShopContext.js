@@ -13,14 +13,14 @@ const getDefaultCart = () => {
 };
 
 const getStoredCart = () => {
-	const storedCart = localStorage.getItem("cart");
-	return storedCart ? JSON.parse(storedCart) : getDefaultCart();
+	// const storedCart = localStorage.getItem("cart");
+	// return storedCart ? JSON.parse(storedCart) : getDefaultCart();
 
-	// if (typeof window !== "undefined") {
-	// 	const storedCart = localStorage.getItem("cart");
-	// 	return storedCart ? JSON.parse(storedCart) : getDefaultCart();
-	// }
-	// return getDefaultCart();
+	if (typeof window !== "undefined") {
+		const storedCart = localStorage.getItem("cart");
+		return storedCart ? JSON.parse(storedCart) : getDefaultCart();
+	}
+	return getDefaultCart();
 };
 
 export const ShopContextProvider = (props) => {
@@ -40,15 +40,15 @@ export const ShopContextProvider = (props) => {
 		return totalAmount;
 	};
 
-	// useEffect(() => {
-	// 	if (typeof window !== "undefined") {
-	// 		localStorage.setItem("cart", JSON.stringify(cartItems));
-	// 	}
-	// }, [cartItems]);
-
 	useEffect(() => {
-		localStorage.setItem("cart", JSON.stringify(cartItems));
+		if (typeof window !== "undefined") {
+			localStorage.setItem("cart", JSON.stringify(cartItems));
+		}
 	}, [cartItems]);
+
+	// useEffect(() => {
+	// 	localStorage.setItem("cart", JSON.stringify(cartItems));
+	// }, [cartItems]);
 
 	const addToCart = (itemId) => {
 		setCartItems((prev) => ({ ...prev, [itemId]: prev[itemId] + 1 }));
